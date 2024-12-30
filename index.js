@@ -23,9 +23,10 @@ const xRater = xRate({
     res.status(403).send(null);
   },
 });
+
 app.set('trust proxy', true);
 app.use(xRater);
-app.set("json spaces", 2);
+app.use(express.json());
 // Middleware CORS
 app.use(cors());
 
