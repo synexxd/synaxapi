@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="style.css">
-  <title>Lenwy REST API</title>
+  <title>Synex - API</title>
 
-  <!-- Full Kode Di Github Saya : https://github.com/Lenwyy/ -->
+  
 
 </head>
 <body>
@@ -15,35 +15,35 @@
   <!-- Popup -->
   <div id="popup-backdrop" class="popup-backdrop"></div>
   <div id="popup" class="popup">
-    <h2>Selamat Datang Di Lenwy API!</h2>
-    <p>Lenwy API Merupakan Sebuah Website REST API Gratis Yang Tidak Memungut Biaya Sama Sekali, Saya Akan Senang Bila Anda Berniat Untuk Berpartisipasi Dalam Kemajuan Website Ini, Terimakasih :D </p>
+    <h2>Synex API'sine hoş geldiniz!</h2>
+    <p>Synex API, hiçbir ücret talep etmeyen ücretsiz bir REST API web sitesidir. Bu web sitesinin geliştirilmesine katkıda bulunmayı düşünürseniz mutlu olurum. Teşekkürler :D.</p>
     <div class="popup-buttons">
-      <button id="close-popup" class="popup-button">Tutup</button>
-      <a href="https://sociabuzz.com/lenwy/tribe" target="_blank" class="popup-button donate">Donasi</a>
+      <button id="close-popup" class="popup-button">Kapalı</button>
+      
     </div>
   </div>
 
-  <!-- Full Kode Di Github Saya : https://github.com/Lenwyy/ -->
+  
 
 </head>
 <body>
 <div class="container">
-  <h1>Lenwy API</h1>
-  <p>Hi, Lenwy API Merupakan Sebuah Website Yang Menyediakan REST API Gratis</p>
+  <h1>Synex API</h1>
+  <pI Merupakan >Merhaba, Synex API, ücretsiz REST API sağlayan bir web sitesidir</p>
   
   <span class="section__subtitle">01</span>
-  <h2 class="centered-title">Informasi</h2>
+  <h2 class="centered-title">Saat</h2>
   <div class="work__card mix apps sites">
-    <h3 class="work__title"><b>Waktu</b></h3>
+    <h3 class="work__title"><b>Bilgi</b></h3>
     <div class="h3 mb-0 font-weight-bold" id="jam"></div>
     <br>
-    <h3 class="work__title"><b>Tanggal</b></h3>
+    <h3 class="work__title"><b>Tarih</b></h3>
     <div class="h5 mb-0 font-weight-bold" id="tanggal"></div>
     <br>
   </div>
 
   <span class="section__subtitle">02</span>
-  <h2 class="centered-title">Daftar REST API</h2>
+  <h2 class="centered-title">APILER</h2>
   
   <!-- Folder AI -->
   <div class="folder" onclick="toggleFolder('folder1', this)">
@@ -61,7 +61,7 @@
       <a href="/blackboxai?text=hai" class="btn-link">Try</a>
     </div>
 
-    <!-- Full Kode Di Github Saya : https://github.com/Lenwyy/ -->
+    
 
     <div class="btn">
       <div class="btn-link">/luminai</div>
@@ -153,38 +153,38 @@
         </div>
       </div>
 
-      <!-- Full Kode Di Github Saya : https://github.com/Lenwyy/ -->
+      
 
  <span class="section__subtitle">03</span>    
- <h2>Penggunaan</h2>
-  <p>Untuk Menggunakan End Point, Kirim Sebuah Permintaan GET kepada End Point yang Diinginkan Dengan Diikuti Parameter Berikut :</p>
+ <h2>Nasıl Kullanılır?</h2>
+  <p>Bir bitiş noktası kullanmak için istenen bitiş noktasına aşağıdaki parametrelerle bir GET isteği gönderin:</p>
   <ul>
     <pre>
 
-message: Isi Permintaan Kamu
+message: Talebinizi girin
     </pre>
   </ul>
 
   <span class="section__subtitle">04</span>
-  <h2>Respon</h2>
-  <p>Respon Yang Diberikan Berupa Format JSON Dengan Struktur :</p>
+  <h2>Cevap</h2>
+  <p>Verilen yanıt JSON formatındadır:</p>
   <pre>
 {
   "status": 200,
-  "creator": "Lenwy",
+  "creator": "Synex",
   "data": {
-    "response": "Hasil Respon Permintaan Kamu"
+    "response": "Talebinizin Yanıt Sonuçları"
   }
 }
   </pre>
 
 <span class="section__subtitle">05</span>
-<h2>Implemetasi</h2>
-<p>Berikut Merupakan Contoh implementasi Dalam Bentuk Case :</p>
+<h2></h2> Uygulama</h2>
+<p>Aşağıda vaka formundaki uygulamaya bir örnek verilmiştir :</p>
 
 <pre id="codeBlock">
 case 'ai4': {
-if (!q) return lenwyreply(`☘️ *Mau Nanya Apa Sama Ai4Chat?*`)
+if (!q) return lenwyreply(`☘️ *Aynı şeyin ne olduğunu sormak ister misin? Ai4Chat?*`)
 if (text.length > 500) return lenwyreply(`☘️ *Maksimal 500 Karakter*`)
 lenwyreply('☘️ *Sabar Yaa*')
 var lenwyai = await fetchJson(`https://api-lenwy.vercel.app/ai4chat?text=${q}`)
@@ -194,26 +194,23 @@ await lenwyreply(lenai)
 break
 </pre>
 
-<!-- Full Kode Di Github Saya : https://github.com/Lenwyy/ -->
+
 
 <!-- Tombol Copy -->
 <button class="copy-btn"  id="copyButton">Copy</button>
-<div id="copyPopup" class="popup2">Berhasil Disalin</div>
+<div id="copyPopup" class="popup2">Başarıyla Kopyalandı</div>
 
-<a href="https://sociabuzz.com/lenwy/tribe" class="circle-button">
-  <img src="https://widipe.com/file/1Kzkads4ziLz.png" alt="Icon" class="icon">
-</a>
 
 <!-- https://widipe.com/file/1Kzkads4ziLz.png -->
 
 <span class="section__subtitle">06</span>
-<h2>Informasi Tambahan</h2>
-<p>Website REST API Ini Masih Dalam Tahap Perkembangan (BETA), Mohon Untuk Memaklumi Segala Kekurangannya, Terimakasih :D</p>
+<h2>Ek Bilgiler</h2>
+<p>Bu REST API web sitesi hala geliştirme aşamasındadır (BETA), lütfen tüm eksiklikleri anlayın, teşekkürler :D</p>
   </div>
 </div>
 </div>
 
-<h6>Copyright © 2024 Lenwy</h6>
+<h6>Copyright © 2024 Synex</h6>
 
 <script src="script.js"></script>
 
