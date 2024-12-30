@@ -3,7 +3,7 @@
     const popup = document.getElementById('popup');
     const popupBackdrop = document.getElementById('popup-backdrop');
 
-    // Full Kode Di Github Saya : https://github.com/Lenwyy/
+    
 
     // Animasi 
     setTimeout(() => {
@@ -23,9 +23,6 @@
   });
 
 
-// Full Kode Di Github Saya : https://github.com/Lenwyy/
-
-// Full Kode Di Github Saya : https://github.com/Lenwyy/
 
 // Copy Dari Tag Pre
 function copyToClipboard() {
@@ -65,7 +62,7 @@ function toggleFolder(folderId, folderElement) {
 
 document.addEventListener('DOMContentLoaded', function() {
 
-  // Full Kode Di Github Saya : https://github.com/Lenwyy/
+  
 
   // Update Waktu
   function updateTime() {
