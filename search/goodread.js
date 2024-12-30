@@ -17,7 +17,7 @@ async function avzzzz(query) {
             books.push({ title, link: `https://www.goodreads.com${link}`, rating });
 
 
-            // Full Kode Di Github Saya : https://github.com/Lenwyy/
+           
         });
         return books;
     } catch (error) {
