@@ -9,23 +9,9 @@ const PORT = process.env.PORT || 3000;
 
 
 app.use(express.static(path.join(__dirname, 'public')));
-const xRate = require('express-rate-limit');
-const getClientIp = (req) => {
-  const forwarded = req.headers['x-forwarded-for'];
-  return forwarded ? forwarded.split(',')[0].trim() : req.connection.remoteAddress;
-};
 
-const xRater = xRate({
-  windowMs: 30000,
-  max: 6,
-  keyGenerator: (req) => getClientIp(req),
-  handler: (req, res) => {
-    res.status(403).send(null);
-  },
-});
 
-app.set('trust proxy', true);
-app.use(xRater);
+app.enable('trust proxy');
 app.use(express.json());
 // Middleware CORS
 app.use(cors());
