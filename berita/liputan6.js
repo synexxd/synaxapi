@@ -3,7 +3,7 @@ const cheerio = require('cheerio');
 
 module.exports = function(app) {
 
-  // Full Kode Di Github Saya : https://github.com/Lenwyy/
+  
 
   // Fungsi scraper liputan6
   async function liputan6() {
@@ -39,16 +39,16 @@ module.exports = function(app) {
     try {
       const data = await liputan6();
       if (data.length === 0) {
-        return res.status(404).json({ message: 'Tidak ada berita terbaru yang ditemukan.' });
+        return res.status(404).json({ message: 'Yeni haber bulunamadı.' });
       }
 
       res.status(200).json({
         status: 200,
-        creator: "Lenwy",
+        creator: "Synex",
         data: data
       });
     } catch (error) {
-      res.status(500).json({ error: 'Terjadi kesalahan saat mengambil data.' });
+      res.status(500).json({ error: 'Veriler alınırken bir hata oluştu.' });
     }
   });
 
