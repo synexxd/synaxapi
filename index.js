@@ -38,7 +38,7 @@ app.get('/', (req, res) => {
 
 // Handle 404 error
 app.use((req, res, next) => {
-  res.status(404).send("Sorry can't find that!");
+  res.status(404).send("Üzgünüm hata oluştu!");
 });
 
 // Handle error
