@@ -15,7 +15,7 @@
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Full Kode Di Github Saya : https://github.com/Lenwyy/ */
+
 
 .container {
   width: 100%;
@@ -69,7 +69,7 @@
   background-color: #218838;
 }
 
-/* Full Kode Di Github Saya : https://github.com/Lenwyy/ */
+
 
 .popup-backdrop {
   position: fixed;
@@ -89,9 +89,7 @@
   opacity: 1;
 }
 
-/* Full Kode Di Github Saya : https://github.com/Lenwyy/ */
 
-/* Full Kode Di Github Saya : https://github.com/Lenwyy/ */
 
   body {
     font-family: Arial, sans-serif;
@@ -169,7 +167,7 @@
     margin-bottom: .25rem;
   }
 
-  /* Full Kode Di Github Saya : https://github.com/Lenwyy/ */
+ 
 
   .btn {
     display: flex;
@@ -274,7 +272,7 @@
     }
   }
 
-/* Full Kode Di Github Saya : https://github.com/Lenwyy/ */
+
 
   .copy-btn {
     display: inline-block;
@@ -348,7 +346,7 @@
     height: 30px;
 }
 
-/* Full Kode Di Github Saya : https://github.com/Lenwyy/ */
+
 
 @keyframes vibrate {
     0%, 100% {
