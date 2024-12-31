@@ -17,19 +17,7 @@ app.use(express.json());
 app.use(cors());
 
 // Import AI
-require('./1-Sayfa/Blackbox')(app);
-require('./1-Sayfa/LuminAI')(app);
-require('./1-Sayfa/Thinkai')(app);
 
-// Import Berita
-require('./berita/liputan6')(app);
-
-// Import Search
-require('./search/goodread')(app);
-require('./search/ypia')(app);
-require('./search/rumaysho')(app);
-require('./search/surah')(app);
-require('./search/jadwalsholat')(app);
 
 
 // Endpoint untuk halaman HTML utama
