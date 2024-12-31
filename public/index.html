@@ -42,9 +42,9 @@
   <!-- Bagian Popup -->
   <h2 class="centered-title">APILER</h2>
   
-<!-- Folder Downloader -->
-     <div class="folder" onclick="toggleFolder('folder1', this)">
-    <h3 class="folder-title">1-Sayfa</h3>
+ <!-- Folder AI -->
+  <div class="folder" onclick="toggleFolder('folder1', this)">
+    <h3 class="folder-title">Ai</h3>
     <span class="icon">▶</span>
   </div>
   
@@ -53,26 +53,46 @@
     <div class="btn-container"> 
 
     <div class="btn">
-      <div class="btn-link">/deneme</div>
-      <span class="desc-endpoint">Yazı</span>
-      <a href="/blackboxai?text=hai" class="btn-link">Dene</a>
+      <div class="btn-link">/blackboxai</div>
+      <span class="desc-endpoint">Chat Dengan BlackboxAI</span>
+      <a href="/blackboxai?text=hai" class="btn-link">Try</a>
     </div>
 
+    <!-- Full Kode Di Github Saya : https://github.com/Lenwyy/ -->
+
+    <div class="btn">
+      <div class="btn-link">/luminai</div>
+      <span class="desc-endpoint">Chat Dengan LuminAI</span>
+      <a href="/luminai?text=hai" class="btn-link">Try</a>
+    </div>
+
+    <div class="btn">
+      <div class="btn-link">/thinkanyai</div>
+      <span class="desc-endpoint">Chat Dengan ThinkanyAI</span>
+      <a href="/thinkany?text=hai" class="btn-link">Try</a>
+    </div>
+
+  </div>
+</div>
 
    <!-- Folder Berita -->
-div class="folder" onclick="toggleFolder('folder2', this)">
+   <div class="folder" onclick="toggleFolder('folder2', this)">
     <h3 class="folder-title">Berita</h3>
     <span class="icon">▶</span>
   </div>
 
-    <!-- Folder Items Downloader -->
+    <!-- Folder Items Berita -->
     <div id="folder2" class="folder-items">
       <div class="btn-container">
 
-      </div>
-    </div>
+        <div class="btn">
+          <div class="btn-link">/api/liputan6</div>
+          <span class="desc-endpoint">Dapatkan Berita Terkini Dari Liputan6</span>
+          <a href="/liputan6" class="btn-link">Try</a>
+        </div>
 
-    
+      </div>
+    </div> 
 
   <!-- Folder Downloader -->
       <div class="folder" onclick="toggleFolder('folder3', this)">
@@ -129,6 +149,7 @@ div class="folder" onclick="toggleFolder('folder2', this)">
 
         </div>
       </div>
+
 
       
 
