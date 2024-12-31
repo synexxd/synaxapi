@@ -17,9 +17,9 @@ app.use(express.json());
 app.use(cors());
 
 // Import AI
-
-
-
+require('./ai/Blackbox')(app);
+require('./ai/LuminAI')(app);
+require('./ai/Thinkai')(app);
 
 // Import Berita
 require('./berita/liputan6')(app);
@@ -30,7 +30,6 @@ require('./search/ypia')(app);
 require('./search/rumaysho')(app);
 require('./search/surah')(app);
 require('./search/jadwalsholat')(app);
-
 
 
 // Endpoint untuk halaman HTML utama
