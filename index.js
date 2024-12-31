@@ -18,7 +18,7 @@ app.use(cors());
 
 // Import AI
 
-require('./1-Sayfa/deneme')(app);
+
 
 
 // Import Berita
