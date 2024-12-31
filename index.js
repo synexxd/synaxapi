@@ -17,9 +17,8 @@ app.use(express.json());
 app.use(cors());
 
 // Import AI
-require('./ai/Blackbox')(app);
-require('./ai/LuminAI')(app);
-require('./ai/Thinkai')(app);
+require('./ai/deneme')(app);
+
 
 // Import Berita
 require('./berita/liputan6')(app);
