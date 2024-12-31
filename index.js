@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(cors());
 
 // Import AI
-require('./ai/deneme')(app);
+
 
 
 // Import Berita
