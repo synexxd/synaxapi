@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -30,6 +30,11 @@ body {
   color: white;
 }
 
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .theme-toggle {
   display: flex;
   align-items: center;
@@ -46,36 +51,94 @@ body {
   display: none;
 }
 
-.light-text,
-.dark-text {
+.theme-icon {
   font-size: 1.2rem;
 }
 
-/* Popup */
-.popup {
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 1rem;
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #007bff, #00d4ff);
+  color: white;
 }
 
-.dark-theme .popup {
-  background: #333;
-  color: #f4f4f4;
+.hero .btn {
+  margin-top: 1rem;
+}
+
+/* Features Section */
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.features-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Kod Bloğu */
-pre {
-  background: #333;
+.code-block {
+  background: #1e1e1e;
   color: #f4f4f4;
   padding: 1rem;
   border-radius: 5px;
+  overflow-x: auto;
+}
+
+/* Butonlar */
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.primary-btn {
+  background: white;
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+.primary-btn:hover {
+  background: #007bff;
+  color: white;
+}
+
+.secondary-btn {
+  background: #007bff;
+  color: white;
+}
+
+.secondary-btn:hover {
+  background: white;
+  color: #007bff;
 }
 
 /* Footer */
 footer {
+  text-align: center;
+  padding: 2rem;
   background: #007bff;
   color: white;
-  text-align: center;
-  padding: 1rem;
 }
