@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -22,11 +22,11 @@ body {
 
 /* Navbar */
 .navbar {
+  background: #007bff;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #007bff;
   color: white;
 }
 
@@ -51,60 +51,31 @@ body {
   font-size: 1.2rem;
 }
 
-/* Hero Bölümü */
-.hero {
-  text-align: center;
-  padding: 4rem 2rem;
-  background: linear-gradient(to right, #007bff, #00d4ff);
-  color: white;
-  transition: background-color 0.3s ease;
+/* Popup */
+.popup {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
 }
 
-.light-theme .hero {
-  background: linear-gradient(to right, #007bff, #00d4ff);
+.dark-theme .popup {
+  background: #333;
+  color: #f4f4f4;
 }
 
-.dark-theme .hero {
-  background: linear-gradient(to right, #1e1e1e, #333333);
-}
-
-/* Features Bölümü */
-.features {
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.features-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.feature {
-  flex: 1;
-  max-width: 300px;
-  background-color: #fff;
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.light-theme .feature {
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.dark-theme .feature {
-  background-color: #1e1e1e;
-  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+/* Kod Bloğu */
+pre {
+  background: #333;
+  color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 5px;
 }
 
 /* Footer */
 footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  background-color: #007bff;
+  background: #007bff;
   color: white;
+  text-align: center;
+  padding: 1rem;
 }
