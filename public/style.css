@@ -1,367 +1,114 @@
-.popup {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.5);
-  width: 400px;
-  padding: 20px;
-  background-color: #191c31;
-  color: white;
-  border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  z-index: 1000;
-  opacity: 0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+/* Genel Ayarlar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-.container {
-  width: 100%;
-  padding: 20px;
-  background-color: #000018;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
 }
 
-@media screen and (max-width: 800px) {
-}
-
-.popup.active {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.popup h2 {
-  margin-bottom: 15px;
-}
-
-.popup p {
-  margin-bottom: 20px;
-}
-
-.popup-buttons {
+/* Navbar */
+.navbar {
   display: flex;
-  justify-content: flex-end; /* Posisi Tombol */
-  gap: 10px; /* Jarak Tombol */
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #007bff;
+  color: white;
 }
 
-.popup-button {
-  background-color: #e74c3c;
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links a {
   color: white;
-  padding: 10px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Bölümü */
+.hero {
+  background: linear-gradient(to right, #007bff, #00d4ff);
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: white;
+  color: #007bff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  text-decoration: none;
 }
 
-.popup-button:hover {
-  background-color: #5a6268;
+.hero button:hover {
+  background: #f0f0f0;
 }
 
-.popup-button.donate {
-  background-color: #28a745;
+/* Bölüm Tasarımı */
+.section {
+  padding: 4rem 2rem;
 }
 
-.popup-button.donate:hover {
-  background-color: #218838;
-}
-
-
-
-.popup-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-  display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.popup-backdrop.active {
-  display: block;
-  opacity: 1;
-}
-
-
-
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #000018;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    min-width: 5px;
-  }
-
-  .container {
-    width: 100%;
-    padding: 20px;
-    background-color: #000018;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-
-  h1 {
-    color: #fff;
-    text-align: center;
-  }
-
-  h2 {
-    color: #fff;
-    margin-top: 20px;
-    text-align: center;
-  }
-
-  h6 {
-    color: #fff;
-    margin-top: 20px;
-    text-align: center;
-  }
-
-  p {
-    line-height: 1.6;
-    color: #6c757d;
-  }
-
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  li {
-    margin-bottom: 10px;
-  }
-
-  pre {
-    background-color: #191c31;
-    padding: 10px;
-    border-radius: 5px;
-    overflow-x: auto;
-  }
-
-  .btn-container {
-    margin-bottom: 20px;
-    background-color: #191c31;
-    border-radius: 1rem;
-    padding: 10px;
-  }
-
-  .work__card {
-    background-color: #191c31;
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-top: 10px;
-  }
-
-  .work__title {
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-    margin-bottom: .25rem;
-  }
-
- 
-
-  .btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 4px 0;
-    background-color: #191c31;
-    color: #fff;
-    border: none;
-    padding: 13px;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    
-  }
-  
-  /* Teks Dalam Container */
-  .desc-endpoint {
-  margin-left: 10px;
-  color: #6c757d;
-  font-size: 14px;
-  flex-grow: 1;
-}
-
-  .btn-text {
-    flex-grow: 1;
-    text-align: left;
-  }
-  .btn-link {
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  .folder {
-    cursor: pointer;
-    background-color: #282c3f;
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .folder-items {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-    opacity: 0;
-  }
-  .icon {
-    font-size: 20px;
-    width: 380px;
-    height: 30px;
-    transition: transform 0.3s ease;
-    transform-origin: center center;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-  .rotated {
-    transform: rotate(90deg);
-  }
-  
-  .open {
-  max-height: none; /* Batas Folder */
-  opacity: 1;
-  }
-
-  .section-spacing {
-    margin-top: 60px;
-  }
-  .large-spacing {
-    margin-top: 100px;
-  }
-  .section__subtitle {
-    display: block;
-    font-size: 12px;
-    color: #fff;
-    text-align: center;
-    margin-top: 30px;
-  }
-  .centered-title {
-    text-align: center;
-  }
-
-  @media (min-width: 480px) {
-    .container {
-      width: 75%;
-      margin: 0 auto;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .container {
-      width: 50%;
-      margin: 0 auto;
-    }
-  }
-
-
-
-  .copy-btn {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    margin-bottom: 15px;
-    border-radius: 5px;
-  }
-
-  .copy-btn:hover {
-    background-color: #45a049;
-  }
-
-
-  .popup2 {
-  visibility: hidden;
-  background-color: #4CAF50;
-  color: #fff;
+.section h2 {
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.feature {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+  margin-bottom: 1rem;
+}
+
+/* Kod Alanı */
+.code {
+  background: #f4f4f4;
+  padding: 1rem;
+  border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 10px;
-  position: fixed;
-  z-index: 1;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: auto;
-  font-size: 16px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; /* Tambahkan delay pada visibility */
+  font-family: monospace;
 }
 
-.popup2.show {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out; /* Animasi muncul */
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #007bff;
+  color: white;
 }
 
-.popup2.hide {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; /* Animasi menghilang */
-}
-
-.circle-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #4CAF50;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    z-index: 1000;
-}
-
-.circle-button:hover {
-    background-color: #45a049;
-}
-
-.icon {
-    width: 30px;
-    height: 30px;
-}
-
-
-
-@keyframes vibrate {
-    0%, 100% {
-        transform: translate(0);
-    }
-    20% {
-        transform: translate(-2px, 2px);
-    }
-    40% {
-        transform: translate(2px, -2px);
-    }
-    60% {
-        transform: translate(-2px, -2px);
-    }
-    80% {
-        transform: translate(2px, 2px);
-    }
-}
