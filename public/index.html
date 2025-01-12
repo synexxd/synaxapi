@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Synex API - Tema Seçimi</title>
+  <meta name="description" content="Synex API - Ücretsiz ve modern API hizmetleri.">
+  <meta property="og:title" content="Synex API - Resmi Hizmet">
+  <meta property="og:description" content="Ücretsiz ve kolay kullanılabilir API hizmetleri.">
   <link rel="stylesheet" href="style.css">
+  <title>Synex API - Tema Özellikli Web Sitesi</title>
 </head>
 <body class="light-theme">
   <!-- Navbar -->
@@ -21,32 +24,83 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Synex API - Modern ve Ücretsiz API Hizmetleri</h1>
-      <p>Dinamik ve kullanıcı dostu API'lerle tanışın.</p>
+  <!-- Popup -->
+  <div id="popup-backdrop" class="popup-backdrop"></div>
+  <div id="popup" class="popup">
+    <h2>Synex API'sine hoş geldiniz!</h2>
+    <p>Synex API, ücretsiz bir REST API web sitesidir. Bu web sitesinin geliştirilmesine katkıda bulunmayı düşünürseniz mutlu olurum. Teşekkürler :D.</p>
+    <div class="popup-buttons">
+      <button id="close-popup" class="popup-button">Kapat</button>
     </div>
-  </header>
+  </div>
 
-  <!-- Features Section -->
-  <section class="features">
-    <h2>API Özellikleri</h2>
-    <div class="features-container">
-      <div class="feature">
-        <h3>Ücretsiz Kullanım</h3>
-        <p>Tüm hizmetlerimiz ücretsizdir ve herkes için açıktır.</p>
-      </div>
-      <div class="feature">
-        <h3>Kolay Entegrasyon</h3>
-        <p>API'mizi projelerinize hızlı bir şekilde entegre edebilirsiniz.</p>
-      </div>
-      <div class="feature">
-        <h3>Güvenilir Hizmet</h3>
-        <p>Yüksek çalışma süresi garantisi ile çalışır.</p>
+  <!-- Ana İçerik -->
+  <div class="container">
+    <h1>Synex API</h1>
+    <p>Merhaba, Synex API, ücretsiz REST API sağlayan bir web sitesidir.</p>
+
+    <!-- API Özellikleri -->
+    <h2 class="centered-title">APILER</h2>
+
+    <!-- Folders -->
+    <div class="folder" onclick="toggleFolder('folder1', this)">
+      <h3 class="folder-title">Yapay Zeka (AI)</h3>
+      <span class="icon">▶</span>
+    </div>
+    <div id="folder1" class="folder-items">
+      <div class="btn-container">
+        <!-- Folder Items -->
       </div>
     </div>
-  </section>
+
+    <div class="folder" onclick="toggleFolder('folder2', this)">
+      <h3 class="folder-title">Haberler</h3>
+      <span class="icon">▶</span>
+    </div>
+    <div id="folder2" class="folder-items">
+      <div class="btn-container">
+        <!-- Folder Items -->
+      </div>
+    </div>
+
+    <!-- API Kullanımı -->
+    <h2>Nasıl Kullanılır?</h2>
+    <p>Bir uç noktayı kullanmak için aşağıdaki parametrelerle bir GET isteği gönderin:</p>
+    <pre>
+message: Talebinizi girin
+    </pre>
+
+    <h2>Cevap</h2>
+    <p>Yanıt JSON formatındadır:</p>
+    <pre>
+{
+  "status": 200,
+  "creator": "Synex",
+  "data": {
+    "response": "Talebinizin Yanıt Sonuçları"
+  }
+}
+    </pre>
+
+    <!-- Örnek Kod -->
+    <h2>Uygulama</h2>
+    <pre id="codeBlock">
+case 'ai4': {
+  if (!q) return reply('Bir şeyler eksik. Talebinizi kontrol edin!');
+  if (text.length > 500) return reply('Maksimum 500 karakter olmalıdır!');
+  const response = await fetch(`https://api.synex.com/ai4chat?text=${q}`);
+  const data = await response.json();
+  return reply(data.response);
+}
+break;
+    </pre>
+    <button class="copy-btn" onclick="copyCode()">Kopyala</button>
+
+    <!-- İletişim -->
+    <h2>Bana Ulaşın!</h2>
+    <p>Discord: infxzmachine</p>
+    <p>Email: synxqw@proton.me</p>
+  </div>
 
   <!-- Footer -->
   <footer>
