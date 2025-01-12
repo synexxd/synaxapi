@@ -6,24 +6,34 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   line-height: 1.6;
   color: #333;
+  background: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Navbar */
 .navbar {
+  background: #007bff;
+  color: white;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background: #007bff;
-  color: white;
 }
 
 .navbar .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  width: 40px;
 }
 
 .nav-links {
@@ -32,83 +42,65 @@ body {
 }
 
 .nav-links li {
-  margin-left: 1.5rem;
+  margin: 0 1rem;
 }
 
 .nav-links a {
   color: white;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.nav-links a:hover {
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 /* Hero Bölümü */
 .hero {
-  background: linear-gradient(to right, #007bff, #00d4ff);
+  background: linear-gradient(90deg, #007bff, #00d4ff);
   color: white;
   text-align: center;
-  padding: 5rem 2rem;
+  padding: 4rem 2rem;
 }
 
-.hero button {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
+.hero-content button {
   background: white;
   color: #007bff;
+  padding: 0.7rem 1.5rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 1rem;
 }
 
-.hero button:hover {
-  background: #f0f0f0;
-}
-
-/* Bölüm Tasarımı */
+/* Features Bölümü */
 .section {
   padding: 4rem 2rem;
 }
 
-.section h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.features-container {
-  display: flex;
-  justify-content: space-around;
-  gap: 1rem;
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
 }
 
 .feature {
-  background: #f9f9f9;
+  background: white;
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: 10px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.feature h3 {
-  margin-bottom: 1rem;
-}
-
-/* Kod Alanı */
-.code {
-  background: #f4f4f4;
+/* Kod Bloğu */
+.code-block {
+  background: #333;
+  color: white;
   padding: 1rem;
-  border: 1px solid #ddd;
   border-radius: 5px;
-  font-family: monospace;
+  overflow-x: auto;
 }
 
 /* Footer */
 footer {
-  text-align: center;
-  padding: 2rem 1rem;
   background: #007bff;
   color: white;
+  text-align: center;
+  padding: 1rem;
 }
 
