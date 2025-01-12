@@ -3,84 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Synex API - Ücretsiz ve güvenilir API hizmetleri.">
-  <meta property="og:title" content="Synex - Resmi API Hizmeti">
-  <meta property="og:description" content="Ücretsiz ve kolay kullanılabilir API hizmetleri sunuyoruz.">
+  <title>Synex API - Tema Seçimi</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="assets/logo.png" type="image/png">
-  <title>Synex API - Resmi Web Sitesi</title>
 </head>
-<body>
+<body class="light-theme">
   <!-- Navbar -->
   <nav class="navbar">
     <div class="navbar-container">
-      <img src="assets/logo.png" alt="Synex Logo" class="logo">
-      <ul class="nav-links">
-        <li><a href="#home">Ana Sayfa</a></li>
-        <li><a href="#features">Özellikler</a></li>
-        <li><a href="#docs">Dokümantasyon</a></li>
-        <li><a href="#contact">İletişim</a></li>
-      </ul>
+      <h1 class="logo">Synex API</h1>
+      <div class="theme-toggle">
+        <label for="theme-switch" class="theme-label">
+          <span class="light-text">🌞</span>
+          <input type="checkbox" id="theme-switch">
+          <span class="dark-text">🌙</span>
+        </label>
+      </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <header id="home" class="hero">
+  <header class="hero">
     <div class="hero-content">
       <h1>Synex API - Modern ve Ücretsiz API Hizmetleri</h1>
-      <p>Verilerinize hızlı ve kolay erişim sağlayan güvenilir bir API platformu.</p>
-      <button onclick="scrollToSection('#features')">Başlayın</button>
+      <p>Dinamik ve kullanıcı dostu API'lerle tanışın.</p>
     </div>
   </header>
 
   <!-- Features Section -->
-  <section id="features" class="section">
+  <section class="features">
     <h2>API Özellikleri</h2>
-    <div class="features-grid">
+    <div class="features-container">
       <div class="feature">
-        <img src="assets/free.png" alt="Ücretsiz Kullanım">
         <h3>Ücretsiz Kullanım</h3>
-        <p>API'miz tamamen ücretsizdir. Ücretli planlara gerek yok!</p>
+        <p>Tüm hizmetlerimiz ücretsizdir ve herkes için açıktır.</p>
       </div>
       <div class="feature">
-        <img src="assets/integration.png" alt="Kolay Entegrasyon">
         <h3>Kolay Entegrasyon</h3>
-        <p>Hızlı ve kolay entegrasyon için sade bir tasarım sunuyoruz.</p>
+        <p>API'mizi projelerinize hızlı bir şekilde entegre edebilirsiniz.</p>
       </div>
       <div class="feature">
-        <img src="assets/reliable.png" alt="Güvenilir Hizmet">
         <h3>Güvenilir Hizmet</h3>
-        <p>Kesintisiz hizmetle yüksek performans garantisi.</p>
+        <p>Yüksek çalışma süresi garantisi ile çalışır.</p>
       </div>
     </div>
-  </section>
-
-  <!-- Documentation Section -->
-  <section id="docs" class="section">
-    <h2>Dokümantasyon</h2>
-    <p>API uç noktalarını kullanmaya başlamak için aşağıdaki örneği inceleyin:</p>
-    <pre class="code-block">
-GET https://api.synex.com/v1/data?param=value
-    </pre>
-    <h3>Yanıt Örneği:</h3>
-    <pre class="code-block">
-{
-  "status": 200,
-  "message": "Başarılı",
-  "data": { "örnek": "değer" }
-}
-    </pre>
-    <button class="copy-btn" onclick="copyCode()">Kodu Kopyala</button>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2>İletişime Geçin</h2>
-    <p>Bize ulaşabileceğiniz kanallar:</p>
-    <ul>
-      <li>Discord: <a href="#">infxzmachine</a></li>
-      <li>Email: <a href="mailto:synxqw@proton.me">synxqw@proton.me</a></li>
-    </ul>
   </section>
 
   <!-- Footer -->
