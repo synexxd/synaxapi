@@ -51,9 +51,27 @@
   <!-- Documentation Section -->
   <section id="docs" class="section docs">
     <h2>Dokümantasyon</h2>
-    <p>Aşağıdaki örnekle başlayabilirsiniz:</p>
+    <p>API uç noktalarını kullanarak kolayca verilerinize ulaşabilirsiniz:</p>
+    <h3>Örnek Uç Nokta</h3>
     <pre class="code-block">
 GET https://api.synex.com/v1/data?param=value
+    </pre>
+
+    <h3>Parametreler</h3>
+    <ul>
+      <li><b>param:</b> Talep ettiğiniz verinin detayını belirler.</li>
+      <li><b>value:</b> Talep edilen değerin detayını içerir.</li>
+    </ul>
+
+    <h3>Örnek Yanıt</h3>
+    <pre class="code-block">
+{
+  "status": 200,
+  "message": "Başarılı",
+  "data": {
+    "key": "örnek değer"
+  }
+}
     </pre>
     <button class="btn secondary-btn" onclick="copyCode()">Kopyala</button>
   </section>
