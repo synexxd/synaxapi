@@ -68,9 +68,9 @@ body {
 }
 
 /* Features Section */
-.section {
-  padding: 4rem 2rem;
+.features {
   text-align: center;
+  padding: 4rem 2rem;
 }
 
 .features-container {
@@ -82,6 +82,7 @@ body {
 
 .feature-card {
   background: white;
+  color: #333;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -89,9 +90,14 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.dark-theme .feature-card {
+  background: #1e1e1e;
+  color: #f4f4f4;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
 .feature-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Kod Bloğu */
@@ -101,6 +107,11 @@ body {
   padding: 1rem;
   border-radius: 5px;
   overflow-x: auto;
+}
+
+.light-theme .code-block {
+  background: #f4f4f4;
+  color: #333;
 }
 
 /* Butonlar */
